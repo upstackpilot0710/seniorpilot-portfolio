@@ -1,7 +1,7 @@
 const ProfileData = {
   img: require("../assets/Images/hero.png"),
   logo: require("../assets/Images/Name.png"),
-  name: "Vijay Kumar",
+  name: "Zachary Liscsack",
   professions: ["Web Developer", "Free Lancer", "Enthusiastic Dev"],
   info: [
     "Knack of building web applications using MERN stack.",
