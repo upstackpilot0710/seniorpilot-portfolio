@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/seniorpilot-portfolio/static/css/main.5a6cb5d3.css",
-    "main.js": "/seniorpilot-portfolio/static/js/main.dde3f00e.js",
+    "main.css": "/seniorpilot-portfolio/static/css/main.fe3e1b1f.css",
+    "main.js": "/seniorpilot-portfolio/static/js/main.00038469.js",
     "static/media/hero.png": "/seniorpilot-portfolio/static/media/hero.51bb221a002090504cc5.png",
     "static/media/about.png": "/seniorpilot-portfolio/static/media/about.0dba6e3e67befaeba4e4.png",
     "static/media/mongodb.png": "/seniorpilot-portfolio/static/media/mongodb.b9e24b8bb2aef42f7ee6.png",
     "static/media/node.png": "/seniorpilot-portfolio/static/media/node.8683d89cf78ffae3d1f7.png",
     "static/media/redux.png": "/seniorpilot-portfolio/static/media/redux.492ed7d54dd2352c5786.png",
+    "static/media/java.png": "/seniorpilot-portfolio/static/media/java.e238a2c40e6eaec570bc.png",
     "static/media/next.png": "/seniorpilot-portfolio/static/media/next.d1a2a5be21c264b805e5.png",
     "static/media/mysql.png": "/seniorpilot-portfolio/static/media/mysql.138af6ce65cd59a39782.png",
     "static/media/css.png": "/seniorpilot-portfolio/static/media/css.8aaf7833370a6845139c.png",
@@ -16,13 +17,14 @@
     "static/media/Name.png": "/seniorpilot-portfolio/static/media/Name.ce8b238d893de89b6bc9.png",
     "static/media/vscode.png": "/seniorpilot-portfolio/static/media/vscode.9da637ae18b05b4a2f99.png",
     "static/media/prisma.png": "/seniorpilot-portfolio/static/media/prisma.670f52f4b3275fb28afd.png",
+    "static/media/python.png": "/seniorpilot-portfolio/static/media/python.9c47735ea0c4a2d20349.png",
     "static/media/github.png": "/seniorpilot-portfolio/static/media/github.68bbeafeade821944d14.png",
     "index.html": "/seniorpilot-portfolio/index.html",
-    "main.5a6cb5d3.css.map": "/seniorpilot-portfolio/static/css/main.5a6cb5d3.css.map",
-    "main.dde3f00e.js.map": "/seniorpilot-portfolio/static/js/main.dde3f00e.js.map"
+    "main.fe3e1b1f.css.map": "/seniorpilot-portfolio/static/css/main.fe3e1b1f.css.map",
+    "main.00038469.js.map": "/seniorpilot-portfolio/static/js/main.00038469.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a6cb5d3.css",
-    "static/js/main.dde3f00e.js"
+    "static/css/main.fe3e1b1f.css",
+    "static/js/main.00038469.js"
   ]
 }
