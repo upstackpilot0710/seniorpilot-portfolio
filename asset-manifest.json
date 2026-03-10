@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/seniorpilot-portfolio/static/css/main.fe3e1b1f.css",
-    "main.js": "/seniorpilot-portfolio/static/js/main.00038469.js",
+    "main.js": "/seniorpilot-portfolio/static/js/main.2b60c5b5.js",
     "static/media/hero.png": "/seniorpilot-portfolio/static/media/hero.51bb221a002090504cc5.png",
     "static/media/about.png": "/seniorpilot-portfolio/static/media/about.0dba6e3e67befaeba4e4.png",
+    "static/media/Name.png": "/seniorpilot-portfolio/static/media/Name.dbc7d6cff4ade8a0cc76.png",
     "static/media/mongodb.png": "/seniorpilot-portfolio/static/media/mongodb.b9e24b8bb2aef42f7ee6.png",
     "static/media/node.png": "/seniorpilot-portfolio/static/media/node.8683d89cf78ffae3d1f7.png",
     "static/media/redux.png": "/seniorpilot-portfolio/static/media/redux.492ed7d54dd2352c5786.png",
@@ -14,17 +15,16 @@
     "static/media/html.png": "/seniorpilot-portfolio/static/media/html.be50d4568ab0cb01edb8.png",
     "static/media/express.png": "/seniorpilot-portfolio/static/media/express.551b076d3a202df33a0c.png",
     "static/media/firebase.png": "/seniorpilot-portfolio/static/media/firebase.733c129740848ac415a5.png",
-    "static/media/Name.png": "/seniorpilot-portfolio/static/media/Name.ce8b238d893de89b6bc9.png",
     "static/media/vscode.png": "/seniorpilot-portfolio/static/media/vscode.9da637ae18b05b4a2f99.png",
     "static/media/prisma.png": "/seniorpilot-portfolio/static/media/prisma.670f52f4b3275fb28afd.png",
     "static/media/python.png": "/seniorpilot-portfolio/static/media/python.9c47735ea0c4a2d20349.png",
     "static/media/github.png": "/seniorpilot-portfolio/static/media/github.68bbeafeade821944d14.png",
     "index.html": "/seniorpilot-portfolio/index.html",
     "main.fe3e1b1f.css.map": "/seniorpilot-portfolio/static/css/main.fe3e1b1f.css.map",
-    "main.00038469.js.map": "/seniorpilot-portfolio/static/js/main.00038469.js.map"
+    "main.2b60c5b5.js.map": "/seniorpilot-portfolio/static/js/main.2b60c5b5.js.map"
   },
   "entrypoints": [
     "static/css/main.fe3e1b1f.css",
-    "static/js/main.00038469.js"
+    "static/js/main.2b60c5b5.js"
   ]
 }
