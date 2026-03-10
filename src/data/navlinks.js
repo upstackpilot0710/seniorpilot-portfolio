@@ -8,8 +8,16 @@ const Navlinks = [
     link: "about",
   },
   {
+    title: "Education",
+    link: "education",
+  },
+  {
     title: "Skills",
     link: "skills",
+  },
+  {
+    title: "Certifications",
+    link: "certifications",
   },
   {
     title: "Projects",
