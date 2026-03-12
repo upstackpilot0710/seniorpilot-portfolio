@@ -1,8 +1,52 @@
-import React from "react";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaExternalLinkAlt, FaGithub, FaEye } from "react-icons/fa";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import ProjectsData from "../data/projects";
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const openModal = (project) => {
+    setSelectedProject(project);
+    setCurrentImageIndex(0);
+  };
+
+  const closeModal = () => {
+    setSelectedProject(null);
+    setCurrentImageIndex(0);
+  };
+
+  const nextImage = () => {
+    if (selectedProject && selectedProject.images) {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === selectedProject.images.length - 1 ? 0 : prevIndex + 1
+      );
+    }
+  };
+
+  const prevImage = () => {
+    if (selectedProject && selectedProject.images) {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === 0 ? selectedProject.images.length - 1 : prevIndex - 1
+      );
+    }
+  };
+
+  const nextProject = () => {
+    const currentIndex = ProjectsData.findIndex(p => p.id === selectedProject.id);
+    const nextIndex = (currentIndex + 1) % ProjectsData.length;
+    setSelectedProject(ProjectsData[nextIndex]);
+    setCurrentImageIndex(0);
+  };
+
+  const prevProject = () => {
+    const currentIndex = ProjectsData.findIndex(p => p.id === selectedProject.id);
+    const prevIndex = currentIndex === 0 ? ProjectsData.length - 1 : currentIndex - 1;
+    setSelectedProject(ProjectsData[prevIndex]);
+    setCurrentImageIndex(0);
+  };
+
   return (
     <section className="text-gray-600 body-font">
       <div className="px-3 py-5 mx-auto text-center sm:mx-6 md:mx-12 md:pt-5 md:mt-5 xl:mx-40">
@@ -23,7 +67,7 @@ const Projects = () => {
           </p>
         </div>
         <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 sm:gap-x-3 md:gap-x-5 lg:gap-x-2 lg:gap-y-5 xl:gap-y-10 xl:gap-x-5 mt-4 md:mt-8 ">
-          {ProjectsData.reverse().map((project) => (
+          {ProjectsData.map((project) => (
             <div
               data-aos="zoom-in-up"
               data-aos-duration="1000"
@@ -49,6 +93,13 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="flex gap-7 justify-center items-center my-7 text-2xl">
+                  <button
+                    onClick={() => openModal(project)}
+                    className="text-darkblue text-xl bg-white rounded-full p-2 hover:bg-gray-100 transition-colors"
+                    title="View Details"
+                  >
+                    <FaEye />
+                  </button>
                   <a
                     className="text-darkblue text-xl bg-white rounded-full p-2"
                     href={project.github}
@@ -71,6 +122,117 @@ const Projects = () => {
           ))}
         </div>
       </div>
+
+      {/* Modal */}
+      {selectedProject && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          {/* Previous Button */}
+          <button
+            onClick={prevProject}
+            className="absolute left-6 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow hover:bg-gray-100 transition"
+          >
+            <FiChevronLeft className="text-2xl text-gray-700" />
+          </button>
+
+          {/* Modal */}
+          <div className="bg-white rounded-lg max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto">
+            <div className="p-6">
+              <div className="flex justify-between items-center mb-4">
+                <h2 className="text-3xl font-bold text-gray-900">{selectedProject.name}</h2>
+                <button
+                  onClick={closeModal}
+                  className="text-gray-500 hover:text-gray-700 text-2xl"
+                >
+                  ×
+                </button>
+              </div>
+
+              {/* Image Gallery */}
+              <div className="relative mb-6">
+                <img
+                  src={selectedProject.images ? selectedProject.images[currentImageIndex] : selectedProject.image}
+                  alt={selectedProject.name}
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+                {selectedProject.images && selectedProject.images.length > 1 && (
+                  <>
+                    <button
+                      onClick={prevImage}
+                      className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
+                    >
+                      ‹
+                    </button>
+                    <button
+                      onClick={nextImage}
+                      className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
+                    >
+                      ›
+                    </button>
+                    <div className="flex justify-center mt-2">
+                      {selectedProject.images.map((_, index) => (
+                        <button
+                          key={index}
+                          onClick={() => setCurrentImageIndex(index)}
+                          className={`w-2 h-2 rounded-full mx-1 ${
+                            index === currentImageIndex ? 'bg-blue-500' : 'bg-gray-300'
+                          }`}
+                        />
+                      ))}
+                    </div>
+                  </>
+                )}
+              </div>
+
+              {/* Detailed Description */}
+              <p className="text-gray-700 text-lg mb-6">
+                {selectedProject.detailedDescription || selectedProject.description}
+              </p>
+
+              {/* Tech Stack */}
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold mb-3">Technologies Used:</h3>
+                <div className="flex flex-wrap justify-center gap-3">
+                  {selectedProject?.icons?.map((Icon, index) => (
+                    <div className="rounded-full p-2 bg-gray-100" key={index}>
+                      <Icon className="text-gray-700 text-2xl" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Links */}
+              <div className="flex gap-4 justify-center mb-6">
+                <a
+                  className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors"
+                  href={selectedProject.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="inline mr-2" />
+                  GitHub
+                </a>
+                <a
+                  className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                  href={selectedProject.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaExternalLinkAlt className="inline mr-2" />
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Next Button */}
+          <button
+            onClick={nextProject}
+            className="absolute right-6 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow hover:bg-gray-100 transition"
+          >
+            <FiChevronRight className="text-2xl text-gray-700" />
+          </button>
+        </div>
+      )}
     </section>
   );
 };
