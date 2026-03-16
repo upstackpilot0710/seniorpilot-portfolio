@@ -1,9 +1,9 @@
 const AboutData = {
   image: require("../assets/Images/about.png"),
   description: [
-    "A passionate and dedicated web developer with a strong background in creating visually stunning and highly functional websites with 2 years of experience in the field.",
-    "Throughout my career, I have developed proficiency in various web technologies including HTML5 , CSS3 , JavaScript. I am well-versed in popular libraries such as React and frameworks like Next ,Tailwind allowing me to build robust and responsive websites.",
-    "I'm excited to take on new challenges and contribute to innovative projects. Feel free to connect with me through my social media link",
+    "I am an AI Full-Stack Developer building products that turn ideas into production-ready SaaS quickly.",
+    "I focus on product-first engineering with clean architecture and rapid iteration, using React, Next.js, Python, Supabase, and scalable backend systems.",
+    "If you're building AI-powered software, SaaS, or an MVP, I deliver reliable code, transparent communication, and fast outcomes.",
   ],
 };
 export default AboutData;
