@@ -11,19 +11,19 @@ const ContactData = {
       icon: FaGithub,
     },
     // {
-    //   url: "https://www.linkedin.com/in/zachary-liscsack-123456789/",
+    //   url: "https://www.linkedin.com/in/upstackpilot-123456789/",
     //   icon: FaLinkedin,
     // },
     // {
-    //   url: "https://discordapp.com/users/zacharyliscsack#1234",
+    //   url: "https://discordapp.com/users/upstackpilot#1234",
     //   icon: FaDiscord,
     // },
     // {
-    //   url: "https://www.instagram.com/zacharyliscsack/",
+    //   url: "https://www.instagram.com/upstackpilot/",
     //   icon: FaInstagram,
     // },
     // {
-    //   url: "https://twitter.com/zacharyliscsack",
+    //   url: "https://twitter.com/upstackpilot",
     //   icon: FaXTwitter,
     // },
   ],

@@ -1,7 +1,7 @@
 const ProfileData = {
   img: require("../assets/Images/hero.png"),
   logo: require("../assets/Images/Name.png"),
-  name: "Zachary Liscsack",
+  name: "Hadin Cooper",
   professions: [
     "AI Full-Stack Developer",
     "React & Next.js",
