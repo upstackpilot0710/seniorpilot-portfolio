@@ -11,7 +11,7 @@ const ProfileData = {
     "Helping startups and businesses turn ideas into working SaaS products.",
     "I build modern web apps, AI workflows, and scalable backend systems for rapid MVP delivery.",
   ],
-  resume: "",//"https://drive.google.com/drive/u/1/folders/1VLbE3u0gC3x66ClPWCUmcK75DuhTAyKx",
+  resume: "https://docs.google.com/document/d/1vzfM26JU8fij95aBHH9Fj7nRefOirLLv/edit?usp=sharing&ouid=106071010993144773183&rtpof=true&sd=true",
 };
 
 export default ProfileData;
