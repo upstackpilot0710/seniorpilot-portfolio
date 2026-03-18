@@ -27,10 +27,10 @@ const Navlinks = [
     title: "Experience",
     link: "experience",
   },
-  {
-    title: "Contact",
-    link: "contact",
-  },
+  // {
+  //   title: "Contact",
+  //   link: "contact",
+  // },
 ];
 
 export default Navlinks;

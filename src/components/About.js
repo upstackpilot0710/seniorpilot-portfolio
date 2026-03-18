@@ -33,25 +33,23 @@ const About = () => {
               src={AboutData.image}
             />
           </div>
-          <div className="lg:w-1/2 justify-center lg:p-5 xl:p-7 md:p-5 flex flex-col items-center text-justify">
+          <div className="lg:w-1/2 justify-center lg:p-5 xl:p-7 md:p-5 flex flex-col text-justify">
             {AboutData.description?.map((item, index) => (
               <p
                 key={index}
-                data-aos="zoom-in"
-                data-aos-duration="1000"
-                data-aos-once="false"
-                className="font-medium text-gray-700 text-lg lg:text-base xl:text-xl leading-loose xl:leading-8 mb-4"
-              >
-                {item}
-              </p>
+                data-aos-delay={index * 100}
+                data-aos-duration="800"
+                className="text-gray-700 text-base lg:text-lg leading-relaxed mb-3"
+                dangerouslySetInnerHTML={{ __html: item }}
+              />
             ))}
             <div
               data-aos="zoom-in"
               data-aos-duration="1500"
               data-aos-once="false"
-              className="mt-7 flex gap-x-4 md:gap-x-5 justify-center md:justify-between"
+              className="mt-7 flex gap-x-4 md:gap-x-5 justify-end"
             >
-              <button className="inline-flex font-medium text-white bg-black border-2 border-black py-3 px-7 focus:outline-none hover:bg-cornsilk hover:border-dark-orange hover:text-black rounded-full text-md xl:px-10">
+              {/* <button className="inline-flex font-medium text-white bg-black border-2 border-black py-3 px-7 focus:outline-none hover:bg-cornsilk hover:border-dark-orange hover:text-black rounded-full text-md xl:px-10">
                 <Link
                   to="contact"
                   spy={true}
@@ -61,7 +59,7 @@ const About = () => {
                 >
                   Hire Me
                 </Link>
-              </button>
+              </button> */}
               <a href={ProfileData.resume} target="_blank" rel="noreferrer">
                 <button className="inline-flex font-medium text-white bg-dark-orange border-2 border-dark-orange py-3 px-7 focus:outline-none hover:bg-cornsilk hover:border-dark-orange hover:text-black rounded-full text-md xl:px-10">
                   Get Resume

@@ -1,22 +1,22 @@
 const EducationData = [
   {
-    degree: "Bachelor of Science in Computer Science",
-    institution: "University Name",
-    duration: "2018 - 2022",
+    degree: "Bachelor of Computer Science",
+    institution: "Mesa Community College",
+    duration: "2017 - 2019",
     description: [
-      "Graduated with honors in Computer Science.",
-      "Specialized in web development and software engineering.",
-      "Participated in various coding competitions and hackathons.",
+      "Studied core computer science concepts including programming, data structures, and software development.",
+      "Built foundational skills in web development and problem-solving.",
+      "Worked on academic projects focused on real-world application development.",
     ],
   },
   {
     degree: "High School Diploma",
-    institution: "High School Name",
-    duration: "2016 - 2018",
+    institution: "Polytechnic High School",
+    duration: "2012 - 2015",
     description: [
-      "Completed high school with excellent grades.",
-      "Active in science and technology clubs.",
-      "Developed interest in programming through school projects.",
+      "Completed high school education with a focus on science and technology subjects.",
+      "Developed early interest in programming and software development.",
+      "Participated in technical coursework and foundational computing studies.",
     ],
   },
 ];

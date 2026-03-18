@@ -24,7 +24,7 @@ function App() {
       <Certification />
       <Projects />
       <Experience />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
       <ScrollToTopButton />
       <ToastContainer />
