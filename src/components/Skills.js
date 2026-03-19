@@ -25,28 +25,23 @@ const Skills = () => {
           data-aos="zoom-in"
           data-aos-duration="1500"
           data-aos-once="true"
-          className="w-full max-w-[1600px] mx-auto px-2 py-6 grid justify-center items-center grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-3 md:gap-4 border-t-gray-200 border-2 rounded-2xl bg-white/60 p-3 md:p-4 shadow-sm"
+          className="w-full max-w-[1600px] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-3 md:gap-4 border-2 border-gray-200 rounded-2xl bg-white/60 shadow-sm p-4 max-h-[400px] overflow-y-auto"
         >
-          {SkillsData.map((skill, index) => {
-            return (
-              <div
-                data-aos="zoom-in-up"
-                data-aos-duration="1200"
-                data-aos-once="false"
-                key={index}
-                className="flex flex-col items-center justify-center gap-1 rounded-xl border border-gray-200 p-2 transition hover:-translate-y-1 hover:shadow-lg"
-              >
-                <img
-                  src={skill.image}
-                  alt={skill.name}
-                  className="w-10 h-10 md:w-12 md:h-12 object-contain"
-                />
-                <p className="text-xs sm:text-sm text-center font-medium tracking-wide">
-                  {skill.name}
-                </p>
-              </div>
-            );
-          })}
+          {SkillsData.map((skill, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center gap-1 rounded-xl border border-gray-200 p-2 hover:-translate-y-1 hover:shadow-lg"
+            >
+              <img
+                src={skill.image}
+                alt={skill.name}
+                className="w-10 h-10 md:w-12 md:h-12 object-contain"
+              />
+              <p className="text-xs sm:text-sm text-center font-medium tracking-wide">
+                {skill.name}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

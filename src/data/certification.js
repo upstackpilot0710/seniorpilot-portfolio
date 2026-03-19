@@ -1,39 +1,27 @@
 const CertificationData = [
   {
-    name: "JavaScript Certification",
-    issuer: "Issuer Name",
-    badge: require("../assets/Images/javascript.png"),
-    link: "#", // Link to certification
-  },
-  {
     name: "Python Certification",
-    issuer: "Issuer Name",
-    badge: require("../assets/Images/python.png"),
-    link: "#",
+    description:
+      "PyBites PCPD-A certified, demonstrating strong Python fundamentals and problem-solving skills.",
+    badge: require("../assets/Images/python-cert.png"),
   },
   {
     name: "React Certification",
-    issuer: "Issuer Name",
-    badge: require("../assets/Images/react.png"),
-    link: "#",
+    description:
+      "3-Star React.js Developer, skilled in building modern, scalable UI applications.",
+    badge: require("../assets/Images/react-cert.png"),
   },
   {
     name: "Next.js Certification",
-    issuer: "Issuer Name",
-    badge: require("../assets/Images/next.png"),
-    link: "#",
+    description:
+      "LetsBoot certified in Next.js, focused on performance-driven full-stack applications.",
+    badge: require("../assets/Images/nextjs-cert.png"),
   },
   {
     name: "AI Certification",
-    issuer: "Issuer Name",
-    badge: require("../assets/Images/java.png"), // Placeholder, since no ai.png
-    link: "#",
-  },
-  {
-    name: "RAG Certification",
-    issuer: "Issuer Name",
-    badge: require("../assets/Images/node.png"), // Placeholder
-    link: "#",
+    description:
+      "IBM-certified in RAG & Agentic AI, with practical AI system development experience.",
+    badge: require("../assets/Images/ai-cert.png"),
   },
 ];
 
