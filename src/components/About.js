@@ -35,13 +35,17 @@ const About = () => {
           </div>
           <div className="lg:w-1/2 justify-center lg:p-5 xl:p-7 md:p-5 flex flex-col text-justify">
             {AboutData.description?.map((item, index) => (
-              <p
+              <div
                 key={index}
+                data-aos="zoom-in"
                 data-aos-delay={index * 100}
                 data-aos-duration="800"
-                className="text-gray-700 text-base lg:text-lg leading-relaxed mb-3"
-                dangerouslySetInnerHTML={{ __html: item }}
-              />
+              >
+                <p
+                  className="text-gray-700 text-base lg:text-lg leading-relaxed mb-3"
+                  dangerouslySetInnerHTML={{ __html: item }}
+                />
+              </div>
             ))}
             <div
               data-aos="zoom-in"

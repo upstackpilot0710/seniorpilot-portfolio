@@ -1,76 +1,31 @@
 const SkillsData = [
-  {
-    name: "HTML",
-    image: require("../assets/Images/html.png"),
-  },
-  {
-    name: "CSS",
-    image: require("../assets/Images/css.png"),
-  },
-  {
-    name: "JavaScript",
-    image: require("../assets/Images/javascript.png"),
-  },
-  {
-    name: "TypeScript",
-    image: require("../assets/Images/typescript.png"),
-  },
-  {
-    name: "MongoDB",
-    image: require("../assets/Images/mongodb.png"),
-  },
-  {
-    name: "Express",
-    image: require("../assets/Images/express.png"),
-  },
-  {
-    name: "React",
-    image: require("../assets/Images/react.png"),
-  },
-  {
-    name: "Node",
-    image: require("../assets/Images/node.png"),
-  },
-  {
-    name: "Redux",
-    image: require("../assets/Images/redux.png"),
-  },
-  {
-    name: "Next",
-    image: require("../assets/Images/next.png"),
-  },
-  {
-    name: "Tailwind",
-    image: require("../assets/Images/tailwind.png"),
-  },
-  {
-    name: "Firebase",
-    image: require("../assets/Images/firebase.png"),
-  },
-  {
-    name: "Prisma",
-    image: require("../assets/Images/prisma.png"),
-  },
-  {
-    name: "MySQL",
-    image: require("../assets/Images/mysql.png"),
-  },
-  {
-    name: "Postman",
-    image: require("../assets/Images/postman.png"),
-  },
-  {
-    name: "VS Code",
-    image: require("../assets/Images/vscode.png"),
-  },
-  {
-    name: "Git",
-    image: require("../assets/Images/git.png"),
-  },
-  {
-    name: "GitHub",
-    image: require("../assets/Images/github.png"),
-  },
+  { name: "HTML", image: require("../assets/Images/html.png") },
+  { name: "CSS", image: require("../assets/Images/css.png") },
+  { name: "JavaScript", image: require("../assets/Images/javascript.png") },
+  { name: "TypeScript", image: require("../assets/Images/typescript.png") },
+  { name: "Python", image: require("../assets/Images/python.png") },
+  { name: "Django", image: require("../assets/Images/django.png") },
+  { name: "React", image: require("../assets/Images/react.png") },
+  { name: "Next", image: require("../assets/Images/next.png") },
+  { name: "Node", image: require("../assets/Images/node.png") },
+  { name: "Express", image: require("../assets/Images/express.png") },
+  { name: "NestJS", image: require("../assets/Images/nestjs.png") },
+  { name: "MongoDB", image: require("../assets/Images/mongodb.png") },
+  { name: "PostgreSQL", image: require("../assets/Images/postgresql.png") },
+  { name: "MySQL", image: require("../assets/Images/mysql.png") },
+  { name: "Supabase", image: require("../assets/Images/supabase.png") },
+  { name: "Redis", image: require("../assets/Images/redis.png") },
+  { name: "Docker", image: require("../assets/Images/docker.png") },
+  { name: "Kubernetes", image: require("../assets/Images/kubernetes.png") },
+  { name: "AWS", image: require("../assets/Images/aws.png") },
+  { name: "Git", image: require("../assets/Images/git.png") },
+  { name: "GitLab", image: require("../assets/Images/gitlab.png") },
+  { name: "GitHub", image: require("../assets/Images/github.png") },
+  { name: "Tailwind", image: require("../assets/Images/tailwind.png") },
+  { name: "Redux", image: require("../assets/Images/redux.png") },
+  { name: "Firebase", image: require("../assets/Images/firebase.png") },
+  { name: "Prisma", image: require("../assets/Images/prisma.png") },
+  { name: "VS Code", image: require("../assets/Images/vscode.png") },
 ];
 
 export default SkillsData;
