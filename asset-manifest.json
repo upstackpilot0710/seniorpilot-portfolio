@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/seniorpilot-portfolio/static/css/main.5e5d6459.css",
-    "main.js": "/seniorpilot-portfolio/static/js/main.3b9f93f4.js",
+    "main.css": "/seniorpilot-portfolio/static/css/main.4aa280c0.css",
+    "main.js": "/seniorpilot-portfolio/static/js/main.c5346c2f.js",
     "static/media/hero.png": "/seniorpilot-portfolio/static/media/hero.2dfa53e2c339a283230d.png",
+    "static/media/react-cert.png": "/seniorpilot-portfolio/static/media/react-cert.21a765f2e327923986f8.png",
     "static/media/about.png": "/seniorpilot-portfolio/static/media/about.0dba6e3e67befaeba4e4.png",
+    "static/media/ai-cert.png": "/seniorpilot-portfolio/static/media/ai-cert.a87011ee9fec057dd8c6.png",
+    "static/media/python-cert.png": "/seniorpilot-portfolio/static/media/python-cert.96aa313b9634cadfb80b.png",
+    "static/media/nextjs-cert.png": "/seniorpilot-portfolio/static/media/nextjs-cert.20261e3de1ff10abacb8.png",
     "static/media/mongodb.png": "/seniorpilot-portfolio/static/media/mongodb.b9e24b8bb2aef42f7ee6.png",
+    "static/media/kubernetes.png": "/seniorpilot-portfolio/static/media/kubernetes.8b308a0390ef896c4b7c.png",
     "static/media/node.png": "/seniorpilot-portfolio/static/media/node.8683d89cf78ffae3d1f7.png",
     "static/media/redux.png": "/seniorpilot-portfolio/static/media/redux.492ed7d54dd2352c5786.png",
-    "static/media/java.png": "/seniorpilot-portfolio/static/media/java.e238a2c40e6eaec570bc.png",
+    "static/media/aws.png": "/seniorpilot-portfolio/static/media/aws.f945c3d9e814903ac914.png",
+    "static/media/nestjs.png": "/seniorpilot-portfolio/static/media/nestjs.24524e5cf7ff2825fdf6.png",
     "static/media/next.png": "/seniorpilot-portfolio/static/media/next.d1a2a5be21c264b805e5.png",
     "static/media/mysql.png": "/seniorpilot-portfolio/static/media/mysql.138af6ce65cd59a39782.png",
     "static/media/css.png": "/seniorpilot-portfolio/static/media/css.8aaf7833370a6845139c.png",
@@ -19,11 +25,11 @@
     "static/media/python.png": "/seniorpilot-portfolio/static/media/python.9c47735ea0c4a2d20349.png",
     "static/media/github.png": "/seniorpilot-portfolio/static/media/github.68bbeafeade821944d14.png",
     "index.html": "/seniorpilot-portfolio/index.html",
-    "main.5e5d6459.css.map": "/seniorpilot-portfolio/static/css/main.5e5d6459.css.map",
-    "main.3b9f93f4.js.map": "/seniorpilot-portfolio/static/js/main.3b9f93f4.js.map"
+    "main.4aa280c0.css.map": "/seniorpilot-portfolio/static/css/main.4aa280c0.css.map",
+    "main.c5346c2f.js.map": "/seniorpilot-portfolio/static/js/main.c5346c2f.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e5d6459.css",
-    "static/js/main.3b9f93f4.js"
+    "static/css/main.4aa280c0.css",
+    "static/js/main.c5346c2f.js"
   ]
 }
