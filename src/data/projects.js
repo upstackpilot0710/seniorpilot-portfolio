@@ -8,9 +8,7 @@ import {
 import {
   SiOpenai,
   SiNextdotjs,
-  SiMongodb,
   SiPostgresql,
-  SiFirebase,
   SiDocker,
 } from "react-icons/si";
 
@@ -21,7 +19,7 @@ const ProjectsData = [
     id: "1",
     name: "AI Influencer Marketing Platform – Stormy",
     image: "./stormy.png",
-    images: ["./stormy.png", "./stormy.png", "./stormy.png"],
+    images: ["./stormy.png", "./stormy-2.png", "./stormy-3.png", "./stormy-4.png"],
     icons: [BiLogoReact, BiLogoNodejs, SiOpenai, TbApi, TbCloud],
     description:
       "End-to-end AI platform for influencer discovery, outreach automation, and deal execution.",
@@ -33,7 +31,7 @@ const ProjectsData = [
     id: "2",
     name: "AI Data Analytics & Insight Engine – Kater",
     image: "./kater.png",
-    images: ["./kater.png", "./kater.png", "./kater.png"],
+    images: ["./kater.png", "./kater-2.png", "./kater-3.png"],
     icons: [
       BiLogoPython,
       SiPostgresql,
@@ -51,7 +49,7 @@ const ProjectsData = [
     id: "3",
     name: "AI Video Generation & Editing Platform – Magic Hour",
     image: "./magichour.png",
-    images: ["./magichour.png", "./magichour.png", "./magichour.png"],
+    images: ["./magichour.png", "./magichour-2.png"],
     icons: [BiLogoReact, BiLogoNodejs, SiOpenai, TbApi],
     description:
       "Unified AI workflow for creating high-quality videos with minimal effort.",
