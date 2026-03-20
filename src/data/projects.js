@@ -5,69 +5,146 @@ import { SiThemoviedatabase, SiExpress } from "react-icons/si";
 const ProjectsData = [
   {
     id: "1",
-    name: "Movie Website",
-    image: "./IMDB.png",
-    images: ["./IMDB.png", "./IMDB.png", "./IMDB.png"], // Added multiple images
-    icons: [BiLogoReact, BiLogoCss3, SiThemoviedatabase],
-    description: "This website provides information about popular , top-rated and upcoming movies.",
-    detailedDescription: "This comprehensive movie website offers detailed information on popular, top-rated, and upcoming movies. Users can browse through extensive movie databases, view trailers, read reviews, and get recommendations based on their preferences. Built with React for a dynamic user interface and integrated with The Movie Database API for real-time data.",
-    github: "https://github.com/upstackpilot0710/IMDB",
-    demo: "https://imdb-rho.vercel.app",
+    name: "Stormy AI",
+    image: "./stormy.png",
+    images: ["./stormy.png", "./stormy.png", "./stormy.png"],
+    icons: [BiLogoReact, TbApi],
+    description:
+      "AI-driven influencer marketing platform for automated discovery, outreach, and deal closing.",
+    detailedDescription:
+      "Stormy is an end-to-end AI influencer marketing platform that automates the entire growth pipeline. It identifies ideal influencers with high precision, sends personalized outreach at scale, and negotiates deals autonomously—allowing teams to focus purely on product growth.",
+    github: "",
+    demo: "https://stormy.ai/",
   },
   {
     id: "2",
-    name: "Ecommerce Website",
-    image: "./ecom.png",
-    images: ["./ecom.png", "./ecom.png", "./ecom.png"], // Added multiple images
-    icons: [BiLogoReact, BiLogoTailwindCss, TbApi, TbDatabase],
-    description: "This website provides users with all the basic kinds of shopping items.",
-    detailedDescription: "An intuitive ecommerce platform where users can explore and purchase a wide variety of shopping items. Features include product search, filtering, shopping cart, secure checkout, and user accounts. Developed using React for frontend interactivity, Tailwind CSS for styling, and connected to APIs for product data and database management.",
-    github: "https://github.com/upstackpilot0710/Ecommerce-Demo",
-    demo: "https://imdb-rho.vercel.app",
+    name: "Kater AI",
+    image: "./kater.png",
+    images: ["./kater.png", "./kater.png", "./kater.png"],
+    icons: [BiLogoPython, TbApi, TbDatabase],
+    description:
+      "AI-powered data analytics platform that turns business questions into actionable insights.",
+    detailedDescription:
+      "Kater transforms natural language business problems into structured data queries and insights. Using a continuous classification engine, it generates contextualized questions, writes code, and delivers results instantly—eliminating dependency on data teams.",
+    github: "",
+    demo: "https://www.kater.ai/",
   },
   {
     id: "3",
-    name: "Chat Application",
-    image: "./chatapp.png",
-    images: ["./chatapp.png", "./chatapp.png", "./chatapp.png"], // Added multiple images
-    icons: [BiLogoReact, BiLogoTailwindCss, BiLogoFirebase],
-    description: "This chat application provides an interface to the users to interact with their friends.",
-    detailedDescription: "A real-time chat application enabling users to connect and communicate with friends seamlessly. Supports private messaging, group chats, and media sharing. Built with React for the frontend, Tailwind CSS for responsive design, and Firebase for backend services including authentication and real-time database.",
-    github: "https://github.com/upstackpilot0710/Chat-App",
-    demo: "https://vchat4whisperchat.vercel.app",
+    name: "Magic Hour AI",
+    image: "./magichour.png",
+    images: ["./magichour.png", "./magichour.png", "./magichour.png"],
+    icons: [BiLogoReact, TbApi],
+    description:
+      "AI video creation platform combining multiple models into a seamless workflow.",
+    detailedDescription:
+      "Magic Hour simplifies professional video production by integrating top AI video models into a unified workflow. Users can generate high-quality videos by selecting templates and customizing outputs with minimal effort.",
+    github: "",
+    demo: "https://magichour.ai/",
   },
   {
     id: "4",
-    name: "Expense Tracker",
-    image: "./expense-tracker.png",
-    images: ["./expense-tracker.png", "./expense-tracker.png", "./expense-tracke3.png"], // Added multiple images
-    icons: [ BiLogoMongodb, SiExpress, BiLogoReact, BiLogoRedux, BiLogoTailwindCss],
-    description: "This application provides an interface for users to track their expenses .",
-    detailedDescription: "A powerful expense tracking application that helps users monitor and manage their finances. Users can add, categorize, and analyze expenses with visual charts and reports. Tech stack includes MongoDB for data storage, Express.js for backend API, React for frontend, Redux for state management, and Tailwind CSS for styling.",
-    github: "https://github.com/upstackpilot0710/Expense-Tracker",
-    demo: "https://vtrack-expense.vercel.app",
+    name: "Sample Planet",
+    image: "./sampleplanet.png",
+    images: ["./sampleplanet.png", "./sampleplanet.png", "./sampleplanet.png"],
+    icons: [TbApi],
+    description:
+      "AI-powered text-to-sound generator for music producers and sound designers.",
+    detailedDescription:
+      "A creative AI platform that allows musicians and sound designers to generate custom audio samples and sound effects. It supports personalized generation and artist-trained datasets for professional-grade music production.",
+    github: "",
+    demo: "https://www.sampleplanet.fm/",
   },
   {
     id: "5",
-    name: "Car Rental Website",
-    image: "./car-rental-app.png",
-    images: ["./car-rental-app.png", "./car-rental-app.png", "./car-rental-app.png"], // Added multiple images
-    icons: [TbBrandNextjs, BiLogoTypescript, BiLogoTailwindCss, TbApi],
-    description: "This is an online platform that allows users to rent cars for personal or business use.",
-    detailedDescription: "An online car rental platform designed for easy booking and management of vehicle rentals. Users can search for available cars, make reservations, and manage bookings. Developed with Next.js for server-side rendering, TypeScript for type safety, Tailwind CSS for design, and integrated APIs for car data and booking systems.",
-    github: "https://github.com/upstackpilot0710/nextjs-car-rental-app",
-    demo: "https://car-rental-application.vercel.app",
+    name: "RankAI",
+    image: "./rankai.png",
+    images: ["./rankai.png", "./rankai.png", "./rankai.png"],
+    icons: [TbApi],
+    description:
+      "Autonomous SEO platform generating and optimizing content for massive traffic growth.",
+    detailedDescription:
+      "RankAI automates SEO by identifying high-value search queries, generating optimized content, and continuously improving performance through iterative AI-driven strategies across Google and AI search engines.",
+    github: "",
+    demo: "https://rankai.ai/",
+  },
+  {
+    id: "6",
+    name: "OpenPaper",
+    image: "./openpaper.png",
+    images: ["./openpaper.png", "./openpaper.png", "./openpaper.png"],
+    icons: [BiLogoReact, TbApi],
+    description:
+      "AI-powered research assistant for reading and understanding academic papers.",
+    detailedDescription:
+      "OpenPaper enhances research workflows by enabling users to read, annotate, and interact with papers using AI. It provides contextual answers with citations, improving comprehension and productivity.",
+    github: "",
+    demo: "https://openpaper.ai/home",
+  },
+  {
+    id: "7",
+    name: "Vaero AI",
+    image: "./vaero.png",
+    images: ["./vaero.png", "./vaero.png", "./vaero.png"],
+    icons: [TbApi],
+    description:
+      "AI writing platform that replicates user-specific writing styles across content.",
+    detailedDescription:
+      "Vaero trains custom AI models on user writing to generate highly personalized content. It integrates with leading foundation models to produce emails, reports, and branded content in a consistent voice.",
+    github: "",
+    demo: "https://vaero.ai/",
   },
   {
     id: "8",
-    name: "Blog Application",
-    image: "./blog-app.png",
-    images: ["./blog-app.png", "./blog-app.png", "./blog-app.png"], // Added multiple images
-    icons: [TbBrandNextjs, BiLogoTailwindCss, BiLogoMongodb,TbBrandPrisma],
-    description: "This application allows users to express their thoughts and experiences through blogs.",
-    detailedDescription: "A full-featured blog application where users can create, edit, and share their thoughts and experiences. Includes user authentication, rich text editing, commenting, and social sharing. Built with Next.js for performance, Tailwind CSS for styling, MongoDB for database, and Prisma for ORM.",
-    github: "https://github.com/upstackpilot0710/Blog-Application",
-    demo: "https://write-ur-blog.vercel.app",
+    name: "Type AI",
+    image: "./typeai.png",
+    images: ["./typeai.png", "./typeai.png", "./typeai.png"],
+    icons: [BiLogoReact],
+    description:
+      "AI-native document editor for long-form content creation and storytelling.",
+    detailedDescription:
+      "Type.ai is designed for writers creating books, essays, and screenplays. It leverages AI to assist with long-form content generation while maintaining structure, creativity, and narrative flow.",
+    github: "",
+    demo: "https://type.ai/",
+  },
+  {
+    id: "9",
+    name: "MediSearch",
+    image: "./medisearch.png",
+    images: ["./medisearch.png", "./medisearch.png", "./medisearch.png"],
+    icons: [TbApi],
+    description:
+      "AI medical search engine delivering direct, science-based health answers.",
+    detailedDescription:
+      "MediSearch provides accurate medical answers using trusted scientific sources. It leverages AI to deliver reliable, evidence-based responses for health-related queries.",
+    github: "",
+    demo: "https://medisearch.io/",
+  },
+  {
+    id: "10",
+    name: "Insyncr",
+    image: "./insyncr.png",
+    images: ["./insyncr.png", "./insyncr.png", "./insyncr.png"],
+    icons: [TbApi],
+    description:
+      "PowerPoint plugin for real-time data integration and automated reporting.",
+    detailedDescription:
+      "Insyncr connects live data sources directly into PowerPoint, enabling automatic updates and dynamic reporting without manual data entry, improving efficiency for business presentations.",
+    github: "",
+    demo: "https://insyncr.com/",
+  },
+  {
+    id: "11",
+    name: "LiveDocs",
+    image: "./livedocs.png",
+    images: ["./livedocs.png", "./livedocs.png", "./livedocs.png"],
+    icons: [BiLogoPython, TbApi],
+    description:
+      "Collaborative AI workspace for data analysis, code execution, and documentation.",
+    detailedDescription:
+      "LiveDocs is an AI-powered environment combining Python, SQL, charts, and collaborative documents. It enables teams to analyze data, build workflows, and share insights in real time.",
+    github: "",
+    demo: "https://livedocs.com/",
   },
 ];
 
