@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/seniorpilot-portfolio/static/css/main.4aa280c0.css",
-    "main.js": "/seniorpilot-portfolio/static/js/main.c5346c2f.js",
+    "main.css": "/seniorpilot-portfolio/static/css/main.bb18c50f.css",
+    "main.js": "/seniorpilot-portfolio/static/js/main.635611ef.js",
     "static/media/hero.png": "/seniorpilot-portfolio/static/media/hero.2dfa53e2c339a283230d.png",
     "static/media/react-cert.png": "/seniorpilot-portfolio/static/media/react-cert.21a765f2e327923986f8.png",
     "static/media/about.png": "/seniorpilot-portfolio/static/media/about.0dba6e3e67befaeba4e4.png",
@@ -25,11 +25,11 @@
     "static/media/python.png": "/seniorpilot-portfolio/static/media/python.9c47735ea0c4a2d20349.png",
     "static/media/github.png": "/seniorpilot-portfolio/static/media/github.68bbeafeade821944d14.png",
     "index.html": "/seniorpilot-portfolio/index.html",
-    "main.4aa280c0.css.map": "/seniorpilot-portfolio/static/css/main.4aa280c0.css.map",
-    "main.c5346c2f.js.map": "/seniorpilot-portfolio/static/js/main.c5346c2f.js.map"
+    "main.bb18c50f.css.map": "/seniorpilot-portfolio/static/css/main.bb18c50f.css.map",
+    "main.635611ef.js.map": "/seniorpilot-portfolio/static/js/main.635611ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.4aa280c0.css",
-    "static/js/main.c5346c2f.js"
+    "static/css/main.bb18c50f.css",
+    "static/js/main.635611ef.js"
   ]
 }
