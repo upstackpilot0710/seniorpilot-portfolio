@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaExternalLinkAlt, FaGithub, FaEye } from "react-icons/fa";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import ProjectsData from "../data/projects";
@@ -9,6 +9,18 @@ const Projects = () => {
   const [showAll, setShowAll] = useState(false);
 
   const visibleProjects = showAll ? ProjectsData : ProjectsData.slice(0, 6);
+
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [selectedProject]);
 
   const openModal = (project) => {
     setSelectedProject(project);
@@ -133,14 +145,14 @@ const Projects = () => {
               </div>
             </div>
           ))}
-          <div className="flex justify-center mt-8">
-            <button
-              onClick={() => setShowAll(!showAll)}
-              className="px-6 py-2 bg-darkblue text-white rounded-full hover:bg-opacity-90 transition"
-            >
-              {showAll ? "Show Less" : "Show More"}
-            </button>
-          </div>
+        </div>
+        <div className="flex justify-center mt-10">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="px-6 py-2.5 text-sm font-medium text-gray-800 border border-gray-300 rounded-full hover:bg-gray-900 hover:text-white transition-all duration-300"
+          >
+            {showAll ? "Show Less" : "Show More"}
+          </button>
         </div>
       </div>
 
@@ -175,27 +187,38 @@ const Projects = () => {
                   alt={selectedProject.name}
                   className="w-full h-64 object-cover rounded-lg"
                 />
+
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30 rounded-lg pointer-events-none" />
+
+                {/* Prev Button */}
                 {selectedProject.images && selectedProject.images.length > 1 && (
                   <>
                     <button
                       onClick={prevImage}
-                      className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
+                      className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-md border border-white/30 text-white p-2 rounded-full hover:bg-white/40 transition-all duration-300 shadow-md"
                     >
-                      ‹
+                      <FiChevronLeft className="text-xl" />
                     </button>
+
+                    {/* Next Button */}
                     <button
                       onClick={nextImage}
-                      className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75"
+                      className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-md border border-white/30 text-white p-2 rounded-full hover:bg-white/40 transition-all duration-300 shadow-md"
                     >
-                      ›
+                      <FiChevronRight className="text-xl" />
                     </button>
-                    <div className="flex justify-center mt-2">
+
+                    {/* Dots Indicator */}
+                    <div className="flex justify-center mt-3">
                       {selectedProject.images.map((_, index) => (
                         <button
                           key={index}
                           onClick={() => setCurrentImageIndex(index)}
-                          className={`w-2 h-2 rounded-full mx-1 ${
-                            index === currentImageIndex ? 'bg-blue-500' : 'bg-gray-300'
+                          className={`w-2.5 h-2.5 rounded-full mx-1 transition-all duration-300 ${
+                            index === currentImageIndex
+                              ? "bg-blue-500 scale-110"
+                              : "bg-gray-300 hover:bg-gray-400"
                           }`}
                         />
                       ))}
@@ -203,7 +226,7 @@ const Projects = () => {
                   </>
                 )}
               </div>
-
+              
               {/* Detailed Description */}
               <p className="text-gray-700 text-lg mb-6">
                 {selectedProject.detailedDescription || selectedProject.description}
@@ -223,24 +246,27 @@ const Projects = () => {
 
               {/* Links */}
               <div className="flex gap-4 justify-center mb-6">
-                <a
-                  className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors"
-                  href={selectedProject.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                {selectedProject.github && (
+                  <a
+                    className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors"
+                    href={selectedProject.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                   <FaGithub className="inline mr-2" />
                   GitHub
-                </a>
-                <a
-                  className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-                  href={selectedProject.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaExternalLinkAlt className="inline mr-2" />
-                  Live Demo
-                </a>
+                </a>)}
+                {selectedProject.demo && (
+                  <a
+                    className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                    href={selectedProject.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaExternalLinkAlt className="inline mr-2" />
+                    Live Demo
+                  </a>
+                )}
               </div>
             </div>
           </div>

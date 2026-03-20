@@ -1,148 +1,163 @@
-import { BiLogoCss3, BiLogoFirebase, BiLogoMongodb, BiLogoReact, BiLogoRedux, BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi";
-import { TbBrandNextjs, TbApi, TbDatabase, TbBrandPrisma } from "react-icons/tb";
-import { SiThemoviedatabase, SiExpress } from "react-icons/si";
+import {
+  BiLogoPython,
+  BiLogoReact,
+  BiLogoNodejs,
+  BiLogoTypescript,
+} from "react-icons/bi";
+
+import {
+  SiOpenai,
+  SiNextdotjs,
+  SiMongodb,
+  SiPostgresql,
+  SiFirebase,
+  SiDocker,
+} from "react-icons/si";
+
+import { TbApi, TbDatabase, TbCloud } from "react-icons/tb";
 
 const ProjectsData = [
   {
     id: "1",
-    name: "Stormy AI",
+    name: "AI Influencer Marketing Platform – Stormy",
     image: "./stormy.png",
     images: ["./stormy.png", "./stormy.png", "./stormy.png"],
-    icons: [BiLogoReact, TbApi],
+    icons: [BiLogoReact, BiLogoNodejs, SiOpenai, TbApi, TbCloud],
     description:
-      "AI-driven influencer marketing platform for automated discovery, outreach, and deal closing.",
-    detailedDescription:
-      "Stormy is an end-to-end AI influencer marketing platform that automates the entire growth pipeline. It identifies ideal influencers with high precision, sends personalized outreach at scale, and negotiates deals autonomously—allowing teams to focus purely on product growth.",
+      "End-to-end AI platform for influencer discovery, outreach automation, and deal execution.",
+    detailedDescription: "Stormy is a fully automated AI-driven influencer marketing platform designed to streamline the entire growth pipeline. It leverages machine learning to identify high-impact influencers with exceptional accuracy, automates personalized outreach campaigns at scale, and intelligently negotiates and finalizes deals. The system eliminates manual marketing workflows, enabling businesses to focus entirely on product growth while AI handles distribution, engagement, and conversion optimization.",
     github: "",
     demo: "https://stormy.ai/",
   },
   {
     id: "2",
-    name: "Kater AI",
+    name: "AI Data Analytics & Insight Engine – Kater",
     image: "./kater.png",
     images: ["./kater.png", "./kater.png", "./kater.png"],
-    icons: [BiLogoPython, TbApi, TbDatabase],
+    icons: [
+      BiLogoPython,
+      SiPostgresql,
+      TbDatabase,
+      TbApi,
+      SiDocker,
+    ],
     description:
-      "AI-powered data analytics platform that turns business questions into actionable insights.",
-    detailedDescription:
-      "Kater transforms natural language business problems into structured data queries and insights. Using a continuous classification engine, it generates contextualized questions, writes code, and delivers results instantly—eliminating dependency on data teams.",
+      "Transforms business questions into automated data analysis and actionable insights.",
+    detailedDescription: "Stormy is a fully automated AI-driven influencer marketing platform designed to streamline the entire growth pipeline. It leverages machine learning to identify high-impact influencers with exceptional accuracy, automates personalized outreach campaigns at scale, and intelligently negotiates and finalizes deals. The system eliminates manual marketing workflows, enabling businesses to focus entirely on product growth while AI handles distribution, engagement, and conversion optimization.",
     github: "",
     demo: "https://www.kater.ai/",
   },
   {
     id: "3",
-    name: "Magic Hour AI",
+    name: "AI Video Generation & Editing Platform – Magic Hour",
     image: "./magichour.png",
     images: ["./magichour.png", "./magichour.png", "./magichour.png"],
-    icons: [BiLogoReact, TbApi],
+    icons: [BiLogoReact, BiLogoNodejs, SiOpenai, TbApi],
     description:
-      "AI video creation platform combining multiple models into a seamless workflow.",
-    detailedDescription:
-      "Magic Hour simplifies professional video production by integrating top AI video models into a unified workflow. Users can generate high-quality videos by selecting templates and customizing outputs with minimal effort.",
+      "Unified AI workflow for creating high-quality videos with minimal effort.",
+    detailedDescription: "Magic Hour is a professional-grade AI video creation platform that integrates multiple state-of-the-art generative video models into a single streamlined workflow. It enables users to generate, edit, and customize videos through intuitive templates and automated processes. By simplifying complex video production tasks, the platform significantly reduces time and technical barriers, allowing creators and businesses to produce high-quality visual content efficiently.",
     github: "",
     demo: "https://magichour.ai/",
   },
   {
     id: "4",
-    name: "Sample Planet",
-    image: "./sampleplanet.png",
-    images: ["./sampleplanet.png", "./sampleplanet.png", "./sampleplanet.png"],
-    icons: [TbApi],
+    name: "AI Audio Generation Platform – Planet",
+    image: "./planet.png",
+    images: ["./planet.png", "./planet-2.png", "./planet-3.png", "./planet-4.png"],
+    icons: [BiLogoPython, SiOpenai, TbApi],
     description:
-      "AI-powered text-to-sound generator for music producers and sound designers.",
-    detailedDescription:
-      "A creative AI platform that allows musicians and sound designers to generate custom audio samples and sound effects. It supports personalized generation and artist-trained datasets for professional-grade music production.",
+      "Text-to-sound AI system for music production and sound design.",
+    detailedDescription: "Magic Hour is a professional-grade AI video creation platform that integrates multiple state-of-the-art generative video models into a single streamlined workflow. It enables users to generate, edit, and customize videos through intuitive templates and automated processes. By simplifying complex video production tasks, the platform significantly reduces time and technical barriers, allowing creators and businesses to produce high-quality visual content efficiently.",
     github: "",
     demo: "https://www.sampleplanet.fm/",
   },
   {
     id: "5",
-    name: "RankAI",
+    name: "Autonomous SEO & Growth Engine – RankAI",
     image: "./rankai.png",
-    images: ["./rankai.png", "./rankai.png", "./rankai.png"],
-    icons: [TbApi],
+    images: ["./rankai.png", "./rankai-2.png", "./rankai-3.png", "./rankai-4.png", "./rankai-5.png"],
+    icons: [BiLogoPython, SiOpenai, TbApi, TbCloud],
     description:
-      "Autonomous SEO platform generating and optimizing content for massive traffic growth.",
-    detailedDescription:
-      "RankAI automates SEO by identifying high-value search queries, generating optimized content, and continuously improving performance through iterative AI-driven strategies across Google and AI search engines.",
+      "AI system that generates, optimizes, and scales SEO content automatically.",
+    detailedDescription: "RankAI is a fully autonomous SEO platform designed to drive large-scale organic traffic growth. It identifies high-value search queries, generates optimized content tailored for both traditional search engines and AI-driven search platforms, and continuously refines its strategy through iterative performance analysis. Acting as a self-improving digital growth engine, RankAI eliminates the need for manual SEO efforts while delivering sustained traffic and visibility.",
     github: "",
     demo: "https://rankai.ai/",
   },
   {
     id: "6",
-    name: "OpenPaper",
+    name: "AI Research Assistant Platform – OpenPaper",
     image: "./openpaper.png",
-    images: ["./openpaper.png", "./openpaper.png", "./openpaper.png"],
-    icons: [BiLogoReact, TbApi],
+    images: ["./openpaper.png", "./openpaper-2.png", "./openpaper-3.png"],
+    icons: [BiLogoReact, SiOpenai, TbApi],
     description:
-      "AI-powered research assistant for reading and understanding academic papers.",
-    detailedDescription:
-      "OpenPaper enhances research workflows by enabling users to read, annotate, and interact with papers using AI. It provides contextual answers with citations, improving comprehension and productivity.",
+      "AI-powered tool for reading, analyzing, and understanding research papers.",
+    detailedDescription: "OpenPaper is an AI-powered research assistant that streamlines the process of reading, analyzing, and understanding academic papers. It provides instant summaries, key insights, and relevant citations, making it easier for researchers and professionals to stay updated with the latest findings in their field.",
     github: "",
     demo: "https://openpaper.ai/home",
   },
   {
     id: "7",
-    name: "Vaero AI",
+    name: "Personalized AI Writing Engine – Vaero",
     image: "./vaero.png",
-    images: ["./vaero.png", "./vaero.png", "./vaero.png"],
-    icons: [TbApi],
+    images: ["./vaero.png"],
+    icons: [BiLogoPython, SiOpenai, TbApi],
     description:
-      "AI writing platform that replicates user-specific writing styles across content.",
-    detailedDescription:
-      "Vaero trains custom AI models on user writing to generate highly personalized content. It integrates with leading foundation models to produce emails, reports, and branded content in a consistent voice.",
+      "AI platform that replicates individual writing styles across content generation.",
+    detailedDescription: "Vaero is a personalized AI writing engine that learns and replicates an individual's unique writing style to generate content that feels authentically theirs. By analyzing a user's existing writing samples, Vaero creates a custom language model that can produce articles, emails, social media posts, and more, all while maintaining the user's distinct voice and tone.",
     github: "",
     demo: "https://vaero.ai/",
   },
   {
     id: "8",
-    name: "Type AI",
+    name: "AI Long-Form Content Editor – Type",
     image: "./typeai.png",
-    images: ["./typeai.png", "./typeai.png", "./typeai.png"],
-    icons: [BiLogoReact],
+    images: ["./typeai.png", "./typeai-2.png", "./typeai-3.png", "./typeai-4.png"],
+    icons: [SiNextdotjs, BiLogoTypescript, SiOpenai],
     description:
-      "AI-native document editor for long-form content creation and storytelling.",
-    detailedDescription:
-      "Type.ai is designed for writers creating books, essays, and screenplays. It leverages AI to assist with long-form content generation while maintaining structure, creativity, and narrative flow.",
+      "AI-native editor for structured long-form writing and storytelling.",
+    detailedDescription: "Type is an AI-native long-form content editor designed to enhance structured writing and storytelling. It provides intelligent suggestions for improving narrative flow, coherence, and style while allowing writers to maintain creative control. With features like real-time feedback, content organization tools, and seamless integration of research materials, Type empowers writers to craft compelling stories and articles efficiently.",
     github: "",
     demo: "https://type.ai/",
   },
   {
     id: "9",
-    name: "MediSearch",
+    name: "AI Medical Search Engine – MediSearch",
     image: "./medisearch.png",
-    images: ["./medisearch.png", "./medisearch.png", "./medisearch.png"],
-    icons: [TbApi],
+    images: ["./medisearch.png"],
+    icons: [BiLogoPython, SiOpenai, TbApi],
     description:
-      "AI medical search engine delivering direct, science-based health answers.",
-    detailedDescription:
-      "MediSearch provides accurate medical answers using trusted scientific sources. It leverages AI to deliver reliable, evidence-based responses for health-related queries.",
+      "Delivers accurate, science-based medical answers using AI.",
+    detailedDescription: "MediSearch is an AI-powered medical search engine that delivers accurate, science-based answers to healthcare professionals and patients. By leveraging advanced natural language processing and medical knowledge graphs, MediSearch provides reliable information on symptoms, conditions, treatments, and medications, ensuring users receive the most up-to-date and evidence-based insights.",
     github: "",
     demo: "https://medisearch.io/",
   },
   {
     id: "10",
-    name: "Insyncr",
+    name: "Dynamic Data Integration Tool – Insyncr",
     image: "./insyncr.png",
-    images: ["./insyncr.png", "./insyncr.png", "./insyncr.png"],
-    icons: [TbApi],
+    images: ["./insyncr.png", "./insyncr-2.png", "./insyncr-3.png", "./insyncr-4.png"],
+    icons: [BiLogoNodejs, TbApi, TbDatabase],
     description:
-      "PowerPoint plugin for real-time data integration and automated reporting.",
-    detailedDescription:
-      "Insyncr connects live data sources directly into PowerPoint, enabling automatic updates and dynamic reporting without manual data entry, improving efficiency for business presentations.",
+      "Automates real-time data integration into PowerPoint presentations.",
+    detailedDescription: "Insyncr is a dynamic data integration tool that automates the process of incorporating real-time data into PowerPoint presentations. It seamlessly connects to various data sources, extracts relevant information, and formats it into visually appealing slides, saving time and effort for presenters.",
     github: "",
     demo: "https://insyncr.com/",
   },
   {
     id: "11",
-    name: "LiveDocs",
+    name: "AI Collaborative Data Workspace – LiveDocs",
     image: "./livedocs.png",
-    images: ["./livedocs.png", "./livedocs.png", "./livedocs.png"],
-    icons: [BiLogoPython, TbApi],
+    images: ["./livedocs.png", "./livedocs-2.png"],
+    icons: [
+      BiLogoPython,
+      SiPostgresql,
+      TbDatabase,
+      TbApi,
+      SiDocker,
+    ],
     description:
-      "Collaborative AI workspace for data analysis, code execution, and documentation.",
-    detailedDescription:
-      "LiveDocs is an AI-powered environment combining Python, SQL, charts, and collaborative documents. It enables teams to analyze data, build workflows, and share insights in real time.",
+      "Collaborative AI environment for data analysis and documentation.",
+    detailedDescription: "...",
     github: "",
     demo: "https://livedocs.com/",
   },
